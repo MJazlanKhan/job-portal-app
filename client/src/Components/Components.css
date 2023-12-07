@@ -1,0 +1,46 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #0F2239;
+    font-weight: 500;
+}
+
+.nav-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* background: #F6F9FE */
+    background-image: url(https://hijobs.e-plugins.com/wp-content/uploads/2023/06/home-banner-bg.jpg);
+    background-size: cover;
+    padding: 14px 0;
+    border-bottom: 1px solid #c5d3f5;
+}
+.nav{
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 80%;
+    width: 200px;
+}
+.nav .last{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav .last button span{
+    color: white;
+}
+.nav .last a{
+    font-size: 16px;
+    color: #0F2239;
+}

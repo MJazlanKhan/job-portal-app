@@ -1,0 +1,63 @@
+
+College Job Posting Board
+
+A college job posting system designed for students, companies, and administrators. The system facilitates student and company interactions, allowing students to create profiles, upload details, and apply for jobs. Companies can view student profiles and post job vacancies. The admin has overall control, managing accounts and ensuring compliance with placement rules.
+
+Frontend (React):
+
+Create a user-friendly UI for the system. ✅
+Implement a page to display a list of jobs from all companies. ✅
+Include a page to view individual job posts with their details, the detail page has an apply now button. Only students will click on the Apply now button and apply for the job. ✅
+Design a user registration and login forgot password, reset password system. ✅
+Allow Companies to create, edit, and delete their jobs (only the job owner can edit and delete their jobs). ✅
+Use antd or material UI design systems ✅
+
+Frontend (Modules):
+Admin:
+There will be only one admin.✅
+Admin can view all job posts,✅
+Admin can view all jobs of a specific company
+Admin can disable a job (disabled job will not be shown to any other use, except the owner company)✅
+Admin can view all companies and details for each company.✅
+Admin can disable a company, a disabled company will not be able to log in and job posts of the disabled company will not be shown to another user.✅
+Admin can view all students and details for each student.✅
+Admin can disable a student, a disabled student will not be able to log in.
+
+Student:
+There will be a separate page to create students.✅
+Students can fill in the details related to their job and education, just like a CV, and view and edit that information.✅
+Students will see all jobs posted by companies. ✅
+Student can see an individual company and their details.✅
+Students can see jobs on the details page and apply for that job.
+
+
+Company:
+There will be a separate page to create a company. ✅
+Companies can fill in the details related to their name, address, description, and other details, and view and edit that information. ✅
+The company can create a job post and will be able to see students who applied for that job. ✅
+Companies can edit and delete their job posts.✅
+
+
+Backend (Express.js):
+Set up RESTful API endpoints for CRUD operations.
+Implement user authentication and authorization with jwt tokens.
+Ensure secure password storage using bcrypt or a similar method.
+Send proper error and status messages with proper error codes.
+Database (MongoDB):
+Design a MongoDB schema for storing jobs, users, details etc.
+Use Mongoose to connect with MongoDB.
+Use Mongoose schema validation.
+Validation:
+Validate user inputs for creating and editing blog posts.
+Implement server-side data validation with some 3rd party package(such as express-validator) to prevent malicious inputs (Bonus)
+Error Handling:
+Create a robust error-handling system on both the front end and back end.
+Provide meaningful error messages to users.
+Documentation:
+Pused your code to Git Hub with proper readme (use readme.so to create a beautiful readme)
+Important Notes:
+No UI guideline is provided for this task, use your own creativity. Get help from online templates. See job posting sites such as indeed or linkedin for UI guidelines.
+Use as much help as needed from the internet.
+Show error and success messages on the front-end where necessary.
+Show the loading state where data is loading and the form is being submitted.
+Send proper and meaningful error messages from the backend.

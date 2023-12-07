@@ -1,0 +1,15 @@
+.singlejob{
+    width: 800px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+    flex-direction: column;
+}
+.job{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+.flex h3{
+    background-color: aliceblue;
+}

@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.job{
+    display: flex;
+    gap: 20px;
+}
+.job *{
+    padding: 3px;
+}
+.job h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.flex{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin: 5px ;
+}
+.flex *{
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+.content{
+    font-size: 17px;
+}
+.jobWrapper{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* padding: 80px 10px; */
+    flex-wrap: wrap;
+}
+.container h1{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    padding: 35px 0;
+}
+.createjobWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0;
+}
+.createjobWrapper h2{
+    font-size: 25px;
+    text-decoration: underline;
+}
+.createjob{
+    width: 800px;
+}
+.createjob .ant-input-affix-wrapper{
+    margin-top: 10px;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btns button{
+    margin-top: 10px;
+}
+button *{
+    color: #FFF;
+}
+button *{
+    padding: 0 !important
+
+}
+.jobwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.label{
+    font-weight: 600;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0;
+}
+label{
+    font-weight: 600;
+    padding-right: 25px;
+}
+.profileWrapper{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}h1{
+    font-size: 30px;
+}
+.profile p{
+    padding-top: 15px;
+}
+.ant-input-affix-wrapper{
+    margin: 15px 0;
+}
+.editaera{
+    width: 80%;
+}
+.alljobswrapper{
+    display: flex;
+    width: 450px;
+    padding: 25px 10px;
+    min-height: 350px;
+    background-color: rgba(189, 210, 228, 0.286);
+    border-radius: 10px;
+}
+.disableText{
+    background-color: rgb(217, 65, 65);
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}

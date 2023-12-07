@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.regWrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://cdn-wordpress-info.futurelearn.com/wp-content/uploads/FL149_Blog_banner_Job_change.jpg.optimal.jpg);
+    background-size: cover;
+}
+.formwrapper{
+    width: 600px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 25px;
+}
+.alert{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6ffed;
+    border: 1px solid #b7eb8f; 
+    color:#52c41a
+}
+.alert .ant-alert, .alert-error .ant-alert{
+    width: 80%;
+    background: none;
+    border: none;
+}
+.alert-error{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc9c6;
+    border: 1px solid #c41a1a; 
+    color:#c41a1a
+}

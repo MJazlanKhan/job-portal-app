@@ -1,0 +1,15 @@
+.menu *{
+    color: #fff;
+    font-size: 22px;
+}
+.menu{
+    padding-top: 60px;
+}
+.adminlogo{
+    padding-top: 120px;
+    padding-left: 50px;
+    width: 80%;
+}
+.ant-table-cell button span{
+    color:#000
+}
