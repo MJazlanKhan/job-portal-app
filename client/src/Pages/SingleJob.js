@@ -24,7 +24,7 @@ const SingleJob = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:9000/api/v1/posts/${Jobid}`);
+        const response = await axios.get(`https://job-portal-app-gug2.onrender.com/api/v1/posts/${Jobid}`);
         if (response.status === 200) {
           setJobPostDetails(response.data);
 
@@ -43,7 +43,7 @@ const SingleJob = () => {
   const handleApply = async () => {
     const confirmed = window.confirm('Are you Ready to Apply For this Job??');
     try {
-      const response = await axios.put(`http://localhost:9000/api/v1/user/jobapply/${postId}`, {
+      const response = await axios.put(`https://job-portal-app-gug2.onrender.com/api/v1/user/jobapply/${postId}`, {
         studentApplyName: ["username : " + username + " " + "Email : " + email]
       });
       setSucess(true)
@@ -58,7 +58,7 @@ const SingleJob = () => {
     const confirmed = window.confirm('Are you sure you want to delete this post?');
 
   if (confirmed) {
-    axios.delete(`http://localhost:9000/api/v1/posts/${postId}`)
+    axios.delete(`https://job-portal-app-gug2.onrender.com/api/v1/posts/${postId}`)
       .then((response) => {
         console.log('Post deleted successfully', response);
         alert('Post deleted successfully')
@@ -84,7 +84,7 @@ const SingleJob = () => {
       const updatedDescription = JobPostDetails.description;
       const updatedSummary = JobPostDetails.summary;
 
-      const response = await axios.put(`http://localhost:9000/api/v1/posts/${postId}`, {
+      const response = await axios.put(`https://job-portal-app-gug2.onrender.com/api/v1/posts/${postId}`, {
         title: updatedTitle,
         Location: updatedLocation,
         Salary: updatedSalary,
