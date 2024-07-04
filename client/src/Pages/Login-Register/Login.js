@@ -43,7 +43,7 @@ const Login = () => {
     if (student.email && student.password) {
       console.log(student)
       try {
-        const res = await axios.post('http://localhost:9000/api/v1/user/userLogin', student)
+        const res = await axios.post('https://job-portal-app-gug2.onrender.com/api/v1/user/userLogin', student)
         localStorage.setItem("token", res.data.token)
         localStorage.setItem("username", res.data.username)
         localStorage.setItem("type", res.data.type)
@@ -72,7 +72,7 @@ const Login = () => {
     if (Company.email, Company.password) {
       console.log(student)
       try {
-        const res = await axios.post('http://localhost:9000/api/v1/user/companyLogin', Company)
+        const res = await axios.post('https://job-portal-app-gug2.onrender.com/api/v1/user/companyLogin', Company)
         localStorage.setItem("token", res.data.token)
         localStorage.setItem("username", res.data.username)
         localStorage.setItem("type", res.data.type)
