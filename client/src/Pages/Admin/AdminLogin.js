@@ -27,7 +27,7 @@ const Login = () => {
 
         if (values.email && values.password) {
             try {
-                const res = await axios.post('http://localhost:9000/api/v1/admin', values)
+                const res = await axios.post('https://job-portal-app-gug2.onrender.com/v1/admin', values)
                 localStorage.setItem("token", res.data.token)
                 localStorage.setItem("username", res.data.username)
                 localStorage.setItem("type", res.data.type)
