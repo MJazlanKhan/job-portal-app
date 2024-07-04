@@ -39,7 +39,7 @@ const AdminHome = () => {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/api/v1/allCompanies');
+        const response = await axios.get('https://job-portal-app-gug2.onrender.com/api/v1/allCompanies');
         if (response.status === 200) {
           const data = response.data;
           setCompanies(data);
@@ -56,7 +56,7 @@ const AdminHome = () => {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/api/v1/adminallPost');
+        const response = await axios.get('https://job-portal-app-gug2.onrender.com/api/v1/adminallPost');
         if (response.status === 200) {
           const data = response.data;
           setJobPosts(data);
@@ -78,7 +78,7 @@ const AdminHome = () => {
   );
   const handleJobStatusChange = async (record, status) => {
     try {
-      const response = await axios.put(`http://localhost:9000/api/v1/updateStatus/${record._id}`, {
+      const response = await axios.put(`https://job-portal-app-gug2.onrender.com/api/v1/updateStatus/${record._id}`, {
         status: status === 'active' ? 'active' : 'disable',
       });
   
@@ -103,7 +103,7 @@ const AdminHome = () => {
   );
   const handleUserStatusChange = async (record, status) => {
     try {
-      const response = await axios.put(`http://localhost:9000/api/v1/UserupdateStatus/${record._id}`, {
+      const response = await axios.put(`https://job-portal-app-gug2.onrender.com/api/v1/UserupdateStatus/${record._id}`, {
         status: status === 'active' ? 'active' : 'disable',
       });
   
@@ -128,7 +128,7 @@ const AdminHome = () => {
   );
   const handleCompanyStatusChange = async (record, status) => {
     try {
-      const response = await axios.put(`http://localhost:9000/api/v1/CompanyupdateStatus/${record._id}`, {
+      const response = await axios.put(`https://job-portal-app-gug2.onrender.com/api/v1/CompanyupdateStatus/${record._id}`, {
         status: status === 'active' ? 'active' : 'disable',
       });
   
