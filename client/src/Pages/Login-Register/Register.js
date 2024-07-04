@@ -60,7 +60,7 @@ const Register = () => {
     if (student.email && student.password && student.confirm && student.nickname && student.residence && student.phone) {
       console.log(student)
       try {
-        const res = await axios.post('http://localhost:9000/api/v1/user/studentSignup', student)
+        const res = await axios.post('https://job-portal-app-gug2.onrender.com/api/v1/user/studentSignup', student)
         setSuccess(true)
       setError(false)
 
@@ -83,7 +83,7 @@ const Register = () => {
     if (Company.email , Company.password, Company.confirm, Company.CompanyName, Company.CompanyAddress, Company.phone ,Company.intro) {
       console.log(Company)
       try {
-        const res = await axios.post('http://localhost:9000/api/v1/user/companySignup', Company)
+        const res = await axios.post('https://job-portal-app-gug2.onrender.com/api/v1/user/companySignup', Company)
         setSuccess(true)
       setError(false)
 
