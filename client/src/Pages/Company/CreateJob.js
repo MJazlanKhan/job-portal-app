@@ -36,7 +36,7 @@ const CreateJob = () => {
   const handleSubmit = async () => {
     console.log(JobPost)
     try {
-      const response = await axios.post(`http://localhost:9000/api/v1/company/createjobpost`, JobPost);
+      const response = await axios.post(`https://job-portal-app-gug2.onrender.com/api/v1/company/createjobpost`, JobPost);
       console.log(response)
       navigate("/")
       setError(false)
