@@ -12,7 +12,7 @@ const CompanyProfile = () => {
     useEffect(() => {
         const fetchProfile = async () => {
             try {
-                const response = await axios.get(`http://localhost:9000/api/v1/company/${userId}`);
+                const response = await axios.get(`https://job-portal-app-gug2.onrender.com/api/v1/company/${userId}`);
                 if (response.status === 200) {
                     const data = response.data;
                     setProfile(data); // Update the profile state
@@ -38,7 +38,7 @@ const CompanyProfile = () => {
             const updatedCompanyAddress = profile.CompanyAddress;
             const updatedintro = profile.intro;
 
-            const response = await axios.put(`http://localhost:9000/api/v1/Company/${userId}`, {
+            const response = await axios.put(`https://job-portal-app-gug2.onrender.com/api/v1/Company/${userId}`, {
                 CompanyName: updatedCompanyName,
                 CompanyAddress: updatedCompanyAddress,
                 phone: updatedphone,
